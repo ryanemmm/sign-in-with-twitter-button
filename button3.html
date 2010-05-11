@@ -1,0 +1,123 @@
+<!DOCTYPE HTML> 
+<!--
+  Button design by Twitter. Converted to code by jm3 @ 140 Proof.
+  More info: http://blog.140proof.com/post/569779156/the-scalable-sign-in-button-for-twitter
+ 
+  ...
+ 
+  This code is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+ 
+  This code is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+ 
+  You should have received a copy of the GNU General Public License
+  along with this code.  If not, see http://www.gnu.org/licenses/.
+ 
+--> 
+ 
+<html> 
+  <head> 
+    <style type="text/css"> 
+
+      /* Simple Reset */
+      * {
+        padding: 0;
+        margin: 0;
+      }
+ 
+      /* The Button: */
+      /** Kill 1px annoying padding in firefox **/
+      button::-moz-focus-inner { 
+        border:   0;
+        padding:  0;
+      }
+
+      /** Button Style (default) **/
+      button.sign_in_with_twitter {
+        border: 2px solid #B1D4DC;
+        background: #c1e6ea -webkit-gradient(linear, left bottom, left top, color-stop(0,  #aed6dc), color-stop(0.9, #d3f5f6));
+        background: #c1e6ea -moz-linear-gradient( center bottom, rgb(161,200,209) 0%, rgb(211,245,246) 81%);
+
+        /* shared */
+        margin: 0 0 4px 0;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+      }
+
+      /** Button Style (darker) **/
+      button.sign_in_with_twitter.darker {
+        border: 2px solid #1D7285;
+        background: #3ea8bb -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(37,146,173)), color-stop(0.81, rgb(70,214,219)));
+        background: #3ea8bb -moz-linear-gradient( center bottom, rgb(37,146,173) 0%, rgb(70,214,219) 81%);
+      }
+
+      /** Button Text (default)  **/
+      button.sign_in_with_twitter span {
+        color: #293f46;
+        text-shadow: #fff 1px 1px 1px;
+        border-left: 2px solid #C6E9ED;
+
+        /* shared */
+        white-space: nowrap;
+        position: relative;
+        display: block;
+        padding: 13px 23px 13px 15px;
+        margin: 0 0 0 60px;
+        font: bold 24px "Lucida Grande";
+      }
+
+      /** Button Text (darker) **/
+      button.sign_in_with_twitter.darker span {
+        color: #fff;
+        text-shadow: #2F808F -1px -1px 1px;
+        border-left: 2px solid #46BFD2;
+      }
+
+      /** Twitter 't' **/
+      button.sign_in_with_twitter tt {
+        border-right: 2px solid #ADD1DD;
+
+        /* shared */
+        display:block;
+        height: 100%;
+        width: 60px;
+        position: absolute;
+        top: 0;
+        left: -60px;
+        background: transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAyCAMAAAAZbWmiAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAxQTFRFnN%2F9YMz8%2F%2F%2F%2F%2F%2F%2F%2FB4YsjQAAAAR0Uk5T%2F%2F%2F%2FAEAqqfQAAAC5SURBVHja1NVLDsMwCATQAe5%2F56pJcYMJMFK6KVs%2FW%2BJjG3aEelgVCKyR2FxJkVwJVSm5IN7RSF%2BTIzBCkausIRxKeWQBc2I7RFUEAp6UgkpDpaEmKAixNmaYwls8QqEh%2FgCyyZDlKQtOt%2FDhUPx4cPmr8OzOCJt1IdOTki7DVvC5h%2BvZm6ZMHWIcMyOP%2FL7hM5xkgjrCJdFmHb4uNHW0%2FZMrOmNZ3vfaKHmBLbUArXMB3uPPwkuAAQB85Q2%2FX3yHxwAAAABJRU5ErkJggg%3D%3D") center center no-repeat;
+        color: transparent;
+        text-shadow: none;
+        font-size: 0;
+        line-height: 0;
+        -webkit-background-size: 40% auto;
+        -moz-background-size: 40% auto;
+        -o-background-size: 40% auto;
+      }
+
+      /** Twitter 't' (darker) **/
+      button.sign_in_with_twitter.darker tt {
+        border-right: 2px solid #237C8F;
+      }
+      
+    </style> 
+  </head> 
+  <body> 
+ 
+  <h1>Examples:</h1> 
+  <form>
+    <button class="sign_in_with_twitter darker"> 
+      <span><tt>t |</tt> Sign in with Twitter</span>
+    </button> 
+  </form>
+  <form>
+    <button class="sign_in_with_twitter"> 
+      <span><tt>t |</tt> Sign in with Twitter</span>
+    </button> 
+  </form>
+  </body> 
+</html> 
